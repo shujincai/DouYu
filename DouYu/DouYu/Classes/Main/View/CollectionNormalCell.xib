@@ -37,7 +37,7 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXW-qf-mk8">
@@ -69,6 +69,12 @@
                 <constraint firstItem="fyy-cq-O0a" firstAttribute="bottom" secondItem="4u6-Ip-RkJ" secondAttribute="bottom" constant="-5" id="whX-mW-eCt"/>
             </constraints>
             <size key="customSize" width="196" height="162"/>
+            <connections>
+                <outlet property="iconImageView" destination="4u6-Ip-RkJ" id="UqK-W9-0pS"/>
+                <outlet property="nickNameLabel" destination="YXW-qf-mk8" id="mdI-3B-a5k"/>
+                <outlet property="onlineBtn" destination="fyy-cq-O0a" id="1Rs-nI-Mx8"/>
+                <outlet property="roomNameLabel" destination="zAg-1h-EXx" id="oKg-zl-WTv"/>
+            </connections>
             <point key="canvasLocation" x="-170" y="-297"/>
         </collectionViewCell>
     </objects>

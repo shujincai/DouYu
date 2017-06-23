@@ -46,38 +46,46 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66666" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOY-bo-C40">
-                        <rect key="frame" x="13" y="5" width="150" height="21"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-wh-Sv8">
+                        <rect key="frame" x="100" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="1IA-8t-qdX"/>
-                            <constraint firstAttribute="height" constant="21" id="w49-U2-58n"/>
+                            <constraint firstAttribute="width" constant="60" id="L1A-Sx-SkK"/>
+                            <constraint firstAttribute="height" constant="20" id="ttV-Oy-1jN"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="5"/>
+                                <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="k4G-zj-LMs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1pe-Rh-Hfq"/>
                 <constraint firstItem="2CP-Ja-j2e" firstAttribute="top" secondItem="94t-N9-wPc" secondAttribute="bottom" constant="5" id="41w-nt-AtO"/>
-                <constraint firstItem="BOY-bo-C40" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="LXB-Bg-i83"/>
                 <constraint firstItem="94t-N9-wPc" firstAttribute="top" secondItem="k4G-zj-LMs" secondAttribute="bottom" constant="5" id="RtX-Cb-btB"/>
-                <constraint firstAttribute="trailing" secondItem="BOY-bo-C40" secondAttribute="trailing" constant="5" id="jgj-pY-dAs"/>
                 <constraint firstItem="2CP-Ja-j2e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ln3-jH-19I"/>
                 <constraint firstAttribute="trailing" secondItem="k4G-zj-LMs" secondAttribute="trailing" id="tfq-mO-7F5"/>
                 <constraint firstItem="94t-N9-wPc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tjU-mu-WqU"/>
                 <constraint firstItem="k4G-zj-LMs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ue0-0m-xiq"/>
                 <constraint firstAttribute="trailing" secondItem="94t-N9-wPc" secondAttribute="trailing" constant="5" id="uu6-25-dlm"/>
+                <constraint firstAttribute="trailing" secondItem="Crn-wh-Sv8" secondAttribute="trailing" constant="8" id="wyH-XD-lxE"/>
                 <constraint firstAttribute="bottom" secondItem="2CP-Ja-j2e" secondAttribute="bottom" constant="10" id="zHt-SS-tNi"/>
+                <constraint firstItem="Crn-wh-Sv8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="zkZ-vN-HBE"/>
             </constraints>
             <size key="customSize" width="168" height="205"/>
+            <connections>
+                <outlet property="cityBtn" destination="2CP-Ja-j2e" id="PWp-mT-wmC"/>
+                <outlet property="iconImageView" destination="k4G-zj-LMs" id="tsQ-5w-twJ"/>
+                <outlet property="nickNameLabel" destination="94t-N9-wPc" id="DhA-G7-fNw"/>
+                <outlet property="onlineBtn" destination="Crn-wh-Sv8" id="NJ6-CA-pbL"/>
+            </connections>
             <point key="canvasLocation" x="39" y="-23.5"/>
         </collectionViewCell>
     </objects>

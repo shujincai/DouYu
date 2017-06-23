@@ -10,6 +10,8 @@ import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
 
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleLbael: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
